@@ -1,0 +1,72 @@
+\documentclass[10pt,twocolumn]{article}
+
+% use the oxycomps style file
+\usepackage{oxycomps}
+
+% usage: \fixme[comments describing issue]{text to be fixed}
+% define \fixme as not doing anything special
+\newcommand{\fixme}[2][]{#2}
+% overwrite it so it shows up as red
+\renewcommand{\fixme}[2][]{\textcolor{red}{#2}}
+% overwrite it again so related text shows as footnotes
+%\renewcommand{\fixme}[2][]{\textcolor{red}{#2\footnote{#1}}}
+
+% read references.bib for the bibtex data
+\bibliography{references}
+
+
+% include metadata in the generated pdf file
+\pdfinfo{
+    /Title (Ethics of Bunny Hop Trainer)
+    /Author (Nico Cantrell)
+}
+
+% set the title and author information
+\title{Ethics of Bunny Hop trainer}
+\author{Nico Cantrell}
+\affiliation{Occidental College}
+\email{ncantrell@oxy.edu}
+
+\begin{document}
+
+\maketitle
+\section{Introduction}
+
+Technology shapes the way humans interact with the world. Most people have a mobile phone in their pocket, fundamentally shifting how information is accessed, how communication between people operates, and even how time is recorded. With the power to have such an influence on the lives of others, the creators of technologies must be conscious of this impact and work to minimize the harm they cause. Even when technology is built purely to aid humanity, unforeseen factors can turn that beneficial tool into a harmful one. An excellent example of this is nuclear technology. Originally designed to provide clean and efficient energy production, this technology has been adapted into a weapon that has killed many people and threatens the lives of many more. When designing new technologies, it is important to weigh the potential benefits of a tool against the potential harms, and for the bunny hop trainer discussed in this paper, it does more harm than good. This product isolates users with disabilities, introduces opportunities for bodily harm from overuse, and creates an environment where a harmful addiction can be formed. Despite its use for the learning of a new skill, the potential harms severely outweigh this novel goal.
+
+\section{Background}
+This paper focuses on a tool designed to teach unfamiliar users how to execute the "bunny hopping" mechanic in two popular video games, Valorant and Counter-Strike 2. Bunny hopping is a technique where users perform a series of complicated aerial movements combined with a series of jumps that are triggered each time the user touches the ground. This technique makes the in-game character appear to jump similarly to a bunny and allows the user to gain and retain a significant amount of movement speed. The trainer teaches this skill by breaking it down into its fundamental components and training the user on each component before instructing them on how to bring it together.
+
+
+
+\section{Accessibility}
+
+A large area of harm for this tool is the lack of accessibility offered by the tool and the games and playstyles it encourages. Game accessibility, as defined by the International Game Developers Association, is "the ability to play a game even when functioning under limiting conditions. Limiting conditions can be functional limitations, or disabilities — such as blindness, deafness, or mobility limitations."\cite{IGDA}. Video games are often created with a control schema that matches the developer's own ability, and many lack flexibility in gameplay options. For someone who is blind, a game that entirely relies on visual feedback is impossible to interface with. While a blind person is a clear example of someone who will struggle to use this tool, the way in which it is designed will make it difficult for people with a wide variety of limiting conditions. Despite being a tool intended to teach those with all levels of familiarity, the reliance on text prompts to relay information and data on the success of the user in the task is also a significant hurdle\cite{AccessInVidya}. Including the option for audio instruction and feedback could make the game more accessible to those with dyslexia or who are not literate. 
+
+First-person shooters are very difficult to make accessible. Since the bunny hop trainer is a tool for teaching skills used in a first-person shooter, these accessibility concerns are inherited. As presented in the initial proposal, there is no support for controller input or any input that is not a keyboard and a mouse. Alternative input devices can be helpful tools for those who do not have the full ability to use traditional control schemes. For many people with accessibility concerns, a one-handed controller can often allow them to play a game they would not otherwise be able to. One-handed controllers are very difficult to implement for first-person shooters because they require two analog inputs simultaneously, one to control the player's movement and one to control the player's aim \cite{GameAccesibilityASurvey}. Other controllers, such as brain wave or eye-tracking controllers, are also difficult to implement for first-person shooters due to the precise nature of aiming with the mouse that it is trying to replicate. Even for those who have the ability to interface with a keyboard and mouse, the precise nature of the movements required to execute an air strafe with a mouse will further limit their ability to interface with the tool. 
+
+\section{Overuse injuries}
+Another potential concern in regard to the ability to interface with the tool and its controls is the potential for physical injury. Repetitive actions, especially those of the hand and wrist, are very damaging and can significantly impact a user's daily life, as a hand is necessary to interact with the world. One common hand injury is intersection syndrome, an inflammation of the wrist commonly seen in racquet sports and other sports requiring repetitive wrist extension \cite{AthleticInjuriesOfWristAndHand}. The act of air strafing requires a similar wrist extension for the wrist controlling the mouse, especially if a user is not properly using their arm to assist in aim. This action repeated nonstop for twenty minutes per day puts the user at significant risk, especially if the body of the user is not used to this movement. The most common hand injury in athletes is De Quervain's syndrome, which is caused by repetitive use of the thumb and can require surgery for treatment\cite{AthleticInjuriesOfWristAndHand}. The most common jump key in video games is the space bar, accessed by the thumb. This trainer requires extremely consistent repetition of a jump input, potentially putting those who use the space bar at risk of De Quervain's syndrome.
+
+
+\section{Video Game Addiction}
+The risks of overuse for users are not just physical; video game addiction is a serious problem. In a study of 7069 computer video game players, 11.9\% met three of the diagnostic criteria for addiction, and in a national study by Germany of 44,000 9th graders, 3\% of male students were found to be dependent on video games \cite{ComputerandVideoGameAddiction}. As such, creating a tool that encourages video game use must be done very carefully and intentionally. Video game addiction is a type of Internet Gaming Disorder (IGD) recognized by the Diagnostic and
+Statistical Manual of Mental Disorders (DSM-5) as the steady and repetitive use of the Internet to play games frequently with different gamers, which leads to clinically significant distress and psychological changes as demonstrated by five or more criteria in a year \cite{SymptomsMechanismsAndTreatments}. These proposed symptoms include preoccupation with gaming, inability to reduce playing and continuing to game despite problems, and the use of gaming to relieve negative moods \cite{InternetGaming}. While the bunny hop trainer does not explicitly endorse or encourage these behaviors, the existence of a tool designed to be used in addition to gameplay can encourage individuals to spend more time playing video games. For those who are already addicted to gaming, providing another avenue to play games while feeling that they are improving or achieving something could relieve negative emotions and reinforce the addiction.
+
+The reinforcement of addiction is a process that largely interacts with the dopamine system in the human brain. Addiction, in the common usage of the word, is the habitual non-medical use of drugs. In the scientific sense, these addictive drugs cause elevations in the level of dopamine in the brain through a process called phasic activation or burst firing \cite{DopamineAndAddiction}. When given a reward such as food, the brain responds with a reflexive and linked burst of dopamine discharges. When this reward pattern is repeated, the dopamine reward can be associated with predictions for the reward. For example, if a bell is rung before each time a food reward is associated, the dopamine reward with the food is triggered when the bell rings. Once the association between the dopamine reward and the bell is established, however, the brain goes further and attempts to assign earlier predictors to the reward response \cite{DopamineAndAddiction}. Instead of the bell ringing to trigger the dopamine reward, the bell ringer walking over to the bell can trigger the reward. To take this idea further, if an individual receives a reward response when they are playing a videogame, creating a tool that the user is supposed to use before playing the game can become an earlier predictor for that reward and further the addiction. The nature of the activity with a clear indicator of a successful attempt represented by higher accuracy in bunny hop timing or faster overall speed is a very clear reward structure that can form an addiction.
+
+One of the main games that the bunny hop trainer aims to aid the user in playing is counter-strike 2. Counter-strike is notorious for its "loot boxes" that serve as virtual slot machines where players can spend money to acquire in-game items randomly. This activity of opening virtual slot machines has been closely linked with the formation of gambling addictions, especially due to the ease of access to minors who are prohibited from gambling\cite{CSGambling}. Counter-strike cases have fully been banned in the Netherlands and Belgium due to these concerns and restricted in countries like France\cite{NoMoreCases}. A tool intended to teach should be more careful with the games it associates itself with, and counter-strike sets a bad example.
+
+\section{Counter-Arguments}
+There are several arguments for the benefits of a bunny hop trainer and the ways in which these benefits outweigh the harms. One of the ways in which the trainer attempts to minimize harm is by the nature of the exercise. Bunny hopping is not a necessary skill to play Counter-strike or Valorant and, in the vast majority of cases, is nothing more than a flashy technique that has no impact on the game. As such, the people who are using the trainer are a small subset of the community. Learning this technique requires a significant amount of knowledge of the game, and the trainer will most likely not be the avenue through which people discover a new addictive game. The recommended usage pattern suggested in the proposal of daily 20-minute play sessions for the period of a week is a relatively short amount of time and does not pose significant harm or opportunity for abuse. Lastly, the "gameplay" of the trainer is not exceptionally engaging. It does not provide the player with rewards for completing goals or punish them for making mistakes. The real reward of the activity is the skill that the player is acquiring and the mastery of a technique, not something present directly in the trainer.
+
+\section{Rebuttal}
+Designing a tool for a specific subset of people is explicitly designed for inaccessibility. Accessibility should be a key design pillar for all technological projects, but especially for those that are marketed as educational tools. This standpoint makes the argument that only a small set of users are interacting with the tool as a harm instead of a benefit. Recommendations on playtime are a good first step and can help enforce healthy habits. Having said this, the recommendations for limited play time are not present in the game at all, and users have no reason to adhere to these guidelines. This lack of implementation negates the potential benefits of this suggestion, as it has no impact on gameplay. The last counter-argument is that the game is not engaging on a conceptual level. In order to make a tool that has significant benefits to its participants, it must in some way make the activity being executed engaging. This suggestion that the trainer will stay unengaging is contradictory to the design of the product and thus seems to be an unreasonable goal. If the trainer truly is unengaging and players still complete their training regiment, they are constructing new reward pathways that did not exist before and making themselves more likely to be addicted to a game that is more engaging or rewarding.
+
+\section{Conclusion}
+Creating a tool that is designed to help people learn how to complete difficult tasks is a noble goal. While the proposed bunny hop trainer has the opportunity to teach, it poses much more risk as a harmful product. The lack of accessibility in the tool and the games that employ the mechanic is severe and only serves to exclude those with disabilities further. This is not to mention the physical and mental risks that users may face by using the application in its intended method. This trainer shows that ideas that seem beneficial must be carefully evaluated, even if they seem harmless or even beneficial. This application should not be constructed, and this essay should serve as an example of the importance of ethical review.
+    
+
+\printbibliography
+
+\end{document}
